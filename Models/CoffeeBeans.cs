@@ -11,7 +11,6 @@ namespace BrewNotes.Models
         public string Name { get; set; } = string.Empty;
         public Roast Roast { get; set; }
         public decimal Price { get; set; } 
-        
         public string? From { get; set; }
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrewNotes.Views.AddBeansView"
+             Title="AddBeansView">
+    <VerticalStackLayout>
+        
+        <Entry Placeholder="Name" Text="Name"/>
+        <Entry Placeholder="From" Text="From"/>
+        <Picker ItemsSource="{Binding BrewMethods}" SelectedItem="{Binding roast}"/>
+        <Entry Placeholder="Price" Text="Price" Keyboard="Numeric"/>
+
+    </VerticalStackLayout>
+</ContentPage>

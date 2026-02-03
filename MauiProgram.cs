@@ -1,4 +1,5 @@
 ﻿using BrewNotes.ViewModels;
+using BrewNotes.Views;
 using Microsoft.Extensions.Logging;
 
 namespace BrewNotes
@@ -22,7 +23,10 @@ namespace BrewNotes
 
             //ViewModels
             builder.Services.AddSingleton<BeanBankViewModel>();
+            builder.Services.AddSingleton<AddBeansViewModel>();
 
+            //Shell 
+            Routing.RegisterRoute(nameof(AddBeansView), typeof(AddBeansView));
             return builder.Build();
         }
     }

@@ -4,10 +4,16 @@
              x:Class="BrewNotes.Views.BeanBankView"
              Title="BeanBankView">
     <VerticalStackLayout>
+        <Button Text="Add" Command="{Binding GoToAddBeansCommand}"/>
         <CollectionView ItemsSource="{Binding CoffeeBeans}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Name}"/>
+                    <StackLayout>
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding Roast}"/>
+                        <Label Text="{Binding Price}"/>
+                        <Label Text="{Binding From}"/>
+                    </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

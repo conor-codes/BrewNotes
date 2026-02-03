@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using BrewNotes.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace BrewNotes
 {
@@ -18,6 +19,9 @@ namespace BrewNotes
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            //ViewModels
+            builder.Services.AddSingleton<BeanBankViewModel>();
 
             return builder.Build();
         }

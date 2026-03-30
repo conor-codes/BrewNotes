@@ -1,4 +1,5 @@
 ﻿using BrewNotes.Models;
+using BrewNotes.Models.Enums;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;

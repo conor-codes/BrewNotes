@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BrewNotes.Models.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,10 +16,3 @@ namespace BrewNotes.Models
     }
 }
 
-public enum Roast
-{
-    Light,
-    Medium,
-    MediumDark,
-    Dark,
-}
